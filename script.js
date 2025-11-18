@@ -12,11 +12,14 @@ const courses = [
 ];
 
 const featuredImages = [
+
     "./IMG_0001.jpg",
+    "./IMG_9955.jpg",
     "./IMG_9957.jpg",
     "./IMG_9958.jpg",
     "./IMG_9959.jpg",
-    "./IMG_9962.jpg",
+    "./IMG_9967.jpg",
+    "./IMG_9977.jpg",
 ];
 
 // ELEMENTS
