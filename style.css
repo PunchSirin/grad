@@ -119,7 +119,7 @@ h1, h2 {
     -ms-overflow-style: 1;
 }
 #featured-gallery::-webkit-scrollbar {
-    display: 5;
+    display: 10;
 }
 
 /* สไตล์สำหรับรูปภาพใน Featured Gallery */
