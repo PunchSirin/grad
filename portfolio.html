@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PIGGYPUNCH'S GRADUATION DAY</title>
+  <style>
+    /* ปรับให้รองรับมือถือ */
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+      h1 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+      }
+      .item {
+        padding: 12px !important;
+      }
+      .item img {
+        height: 180px !important;
+      }
+      #popup img {
+        height: 180px !important;
+      }
+      #popup > div {
+        width: 94% !important;
+        padding: 15px !important;
+      }
+      .detail-btn {
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+      }
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  .detail-btn {
+      display: inline-block;
+      background: #007bff;
+      color: #fff !important;
+      padding: 10px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.2s;
+      font-weight: bold;
+    }
+    .detail-btn:hover {
+      background: #0056cc;
+      transform: scale(1.03);
+    }
+    .detail-btn:active {
+      background: #003f99;
+      transform: scale(0.97);
+    }
+  </style>
+</head>
+<body>
+  <h1>PUNCH'S GRADUATION DAY</h1>
+  <div class="gallery" style="display: flex; flex-direction: column; gap: 25px;">
+    <div class="item" style="background: #fff; padding: 15px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+      <img src="https://via.placeholder.com/600x300" alt="ผลงาน 1" style="width: 100%; height: 250px; object-fit: cover; border-radius: 10px;" />
+      <h2>ผลงาน 1</h2>
+      <p>รายละเอียดสั้นๆ ของผลงาน 1 อธิบายว่าคืออะไร ทำอะไร หรือออกแบบอะไร</p>
+      <a href="#" class="detail-btn">ดูรายละเอียดเพิ่มเติม</a>
+    </div>
+
+    <div class="item" style="background: #fff; padding: 15px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+      <img src="https://via.placeholder.com/600x300" alt="ผลงาน 2" style="width: 100%; height: 250px; object-fit: cover; border-radius: 10px;" />
+      <h2>ผลงาน 2</h2>
+      <p>รายละเอียดสั้นๆ ของผลงาน 2 อธิบายลักษณะงานหรือสิ่งที่สร้างขึ้น</p>
+      <a href="#" class="detail-btn">ดูรายละเอียดเพิ่มเติม</a>
+    </div>
+
+    <div class="item" style="background: #fff; padding: 15px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+      <img src="https://via.placeholder.com/600x300" alt="ผลงาน 3" style="width: 100%; height: 250px; object-fit: cover; border-radius: 10px;" />
+      <h2>ผลงาน 3</h2>
+      <p>คำอธิบายสั้นๆ ของผลงาน 3 ระบุประเภทงานและความน่าสนใจ</p>
+      <a href="#" class="detail-btn">ดูรายละเอียดเพิ่มเติม</a>
+    </div>
+  </div>
+  <!-- Popup Modal -->
+  <div id="popup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); display: none; align-items: center; justify-content: center; overflow-y: auto; padding: 20px;">
+    <div style="background: #fff; width: 90%; max-width: 500px; padding: 20px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.3); position: relative; max-height: 90vh; overflow-y: auto;">background: #fff; width: 90%; max-width: 500px; padding: 20px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.3); position: relative;">
+      <img id="popup-img" src="" style="width: 100%; height: 220px; object-fit: cover; border-radius: 10px; margin-bottom: 15px;" />
+      <h2 id="popup-title">ชื่อผลงาน</h2>
+      <p id="popup-desc">รายละเอียดของผลงานที่จะแสดงในป๊อปอัพ</p>
+      <button id="closePopup" style="margin-top: 15px; padding: 10px 16px; border: none; background: #ff3b3b; color: #fff; border-radius: 8px; cursor: pointer;">ปิด</button>
+    </div>
+  </div>
+
+  <script>
+    const buttons = document.querySelectorAll('.detail-btn');
+    const popup = document.getElementById('popup');
+    const title = document.getElementById('popup-title');
+    const desc = document.getElementById('popup-desc');
+
+    buttons.forEach((btn, index) => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const item = btn.closest('.item');
+        const itemTitle = item.querySelector('h2').innerText;
+        const itemDesc = item.querySelector('p').innerText;
+
+        const itemImg = item.querySelector('img').src;
+
+        title.innerText = itemTitle;
+        desc.innerText = itemDesc;
+        document.getElementById('popup-img').src = itemImg;
+        desc.innerText = itemDesc;
+        popup.style.display = 'flex';
+      });
+    });
+
+    document.getElementById('closePopup').addEventListener('click', () => {
+      popup.style.display = 'none';
+    });
+
+    popup.addEventListener('click', (e) => {
+      if (e.target === popup) popup.style.display = 'none';
+    });
+  </script>
+</body>
+</html>
