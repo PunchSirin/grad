@@ -1,22 +1,6 @@
 
 // ข้อมูลเดินทาง 
 const courses = [
-    {
-        id: 1,
-        title: "Private Car",
-        category: "22 - 23 Nov",
-        image: ["in.jpg", "img2.jpg"],
-        desc: "ที่จอดรถในและนอกมหาลัย",
-    
-    },
-{
-        id: 2,
-        title: "Public Transport",
-        category: "22 - 23 Nov",
-        image: "img2.jpg",
-        desc: "",
-    },
-
     { id: 1, title: "Graphic Design", category: "22 - 23 Nov", count: 78, desc: "หลักสูตรครอบคลุมทักษะการออกแบบกราฟิกพื้นฐานถึงมืออาชีพ", img: "https://via.placeholder.com/300x120/f77f52/fff?text=Graphic+Design" },
     { id: 2, title: "Digital Photography", category: "26 Nov", count: 64, desc: "เรียนรู้เทคนิคการถ่ายภาพดิจิทัล การจัดแสง และการแต่งภาพ", img: "https://via.placeholder.com/300x120/72b8d0/fff?text=Photography" },
    // { id: 3, title: "UI/UX Design", category: "Design", count: 92, desc: "การออกแบบส่วนต่อประสานผู้ใช้และประสบการณ์ผู้ใช้สำหรับเว็บไซต์และแอปพลิเคชัน", img: "https://via.placeholder.com/300x120/a83e60/fff?text=UI/UX" },
@@ -42,7 +26,7 @@ const featuredImages = [
 const gallery = document.getElementById('course-gallery');
 const popup = document.getElementById('popup');
 const featuredGallery = document.getElementById('featured-gallery');
-const categoryFilterContainer = document.getElementById('category-filter-container');
+
 
 // POPUP ELEMENTS
 const popupImg = document.getElementById('popup-img');
