@@ -233,6 +233,8 @@ h1, h2 {
     cursor: pointer;
 }
 
+
+
 /* --- RESPONSIVE FOR TABLET/DESKTOP --- */
 @media (min-width: 600px) {
     .container {

@@ -1,14 +1,14 @@
 
 // ข้อมูลหลักสูตร
 const courses = [
-    { id: 1, title: "Graphic Design", category: "Design", count: 78, desc: "หลักสูตรครอบคลุมทักษะการออกแบบกราฟิกพื้นฐานถึงมืออาชีพ", img: "https://via.placeholder.com/300x120/f77f52/fff?text=Graphic+Design" },
-    { id: 2, title: "Digital Photography", category: "Photography", count: 64, desc: "เรียนรู้เทคนิคการถ่ายภาพดิจิทัล การจัดแสง และการแต่งภาพ", img: "https://via.placeholder.com/300x120/72b8d0/fff?text=Photography" },
-    { id: 3, title: "UI/UX Design", category: "Design", count: 92, desc: "การออกแบบส่วนต่อประสานผู้ใช้และประสบการณ์ผู้ใช้สำหรับเว็บไซต์และแอปพลิเคชัน", img: "https://via.placeholder.com/300x120/a83e60/fff?text=UI/UX" },
-    { id: 4, title: "Illustration", category: "Design", count: 56, desc: "สร้างภาพประกอบดิจิทัลและแอนะล็อกด้วยเครื่องมือหลากหลาย", img: "https://via.placeholder.com/300x120/38a3a5/fff?text=Illustration" },
-    { id: 5, title: "Motion Graphics", category: "Design", count: 48, desc: "สร้างกราฟิกเคลื่อนไหวและวิดีโอสั้นสำหรับสื่อโซเชียล", img: "https://via.placeholder.com/300x120/ffc300/333?text=Motion" },
-    { id: 6, title: "3D Modeling", category: "Technology", count: 42, desc: "พื้นฐานการสร้างแบบจำลอง 3 มิติสำหรับเกมและงานสถาปัตยกรรม", img: "https://via.placeholder.com/300x120/583d72/fff?text=3D+Modeling" },
-    { id: 7, title: "Fiction Writing", category: "Writing", count: 37, desc: "เรียนรู้โครงสร้างการเขียนเรื่องสั้นและนวนิยายที่น่าสนใจ", img: "https://via.placeholder.com/300x120/3d5875/fff?text=Writing" },
-    { id: 8, title: "Marketing Strategy", category: "Marketing", count: 55, desc: "การวางแผนกลยุทธ์การตลาดดิจิทัลและแบรนด์", img: "https://via.placeholder.com/300x120/f94144/fff?text=Marketing" },
+    { id: 1, title: "Graphic Design", category: "22 - 23 Nov", count: 78, desc: "หลักสูตรครอบคลุมทักษะการออกแบบกราฟิกพื้นฐานถึงมืออาชีพ", img: "https://via.placeholder.com/300x120/f77f52/fff?text=Graphic+Design" },
+    { id: 2, title: "Digital Photography", category: "26 Nov", count: 64, desc: "เรียนรู้เทคนิคการถ่ายภาพดิจิทัล การจัดแสง และการแต่งภาพ", img: "https://via.placeholder.com/300x120/72b8d0/fff?text=Photography" },
+   // { id: 3, title: "UI/UX Design", category: "Design", count: 92, desc: "การออกแบบส่วนต่อประสานผู้ใช้และประสบการณ์ผู้ใช้สำหรับเว็บไซต์และแอปพลิเคชัน", img: "https://via.placeholder.com/300x120/a83e60/fff?text=UI/UX" },
+   // { id: 4, title: "Illustration", category: "Design", count: 56, desc: "สร้างภาพประกอบดิจิทัลและแอนะล็อกด้วยเครื่องมือหลากหลาย", img: "https://via.placeholder.com/300x120/38a3a5/fff?text=Illustration" },
+    //{ id: 5, title: "Motion Graphics", category: "Design", count: 48, desc: "สร้างกราฟิกเคลื่อนไหวและวิดีโอสั้นสำหรับสื่อโซเชียล", img: "https://via.placeholder.com/300x120/ffc300/333?text=Motion" },
+    //{ id: 6, title: "3D Modeling", category: "Technology", count: 42, desc: "พื้นฐานการสร้างแบบจำลอง 3 มิติสำหรับเกมและงานสถาปัตยกรรม", img: "https://via.placeholder.com/300x120/583d72/fff?text=3D+Modeling" },
+    //{ id: 7, title: "Fiction Writing", category: "Writing", count: 37, desc: "เรียนรู้โครงสร้างการเขียนเรื่องสั้นและนวนิยายที่น่าสนใจ", img: "https://via.placeholder.com/300x120/3d5875/fff?text=Writing" },
+    //{ id: 8, title: "Marketing Strategy", category: "Marketing", count: 55, desc: "การวางแผนกลยุทธ์การตลาดดิจิทัลและแบรนด์", img: "https://via.placeholder.com/300x120/f94144/fff?text=Marketing" },
 ];
 
 const featuredImages = [
