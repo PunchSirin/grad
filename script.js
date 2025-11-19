@@ -5,7 +5,7 @@ const courses = [
         id: 1,
         title: "Private Car",
         category: "22 - 23 Nov",
-        image: ["in.jpg", "out.jpg"],
+        image: ["in.jpg", "img2.jpg"],
         desc: "ที่จอดรถในและนอกมหาลัย",
     
     },
